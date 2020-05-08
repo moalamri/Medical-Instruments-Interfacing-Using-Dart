@@ -47,11 +47,11 @@ class InitializeTCP {
         await _serverSocket.close();     
         break;
       case 06:
-        // This is an example of sending a string to the instrument.
+        // This is an example of sending a text to the instrument.
         sendData(AsciiCodec().encode('test string'));
         break;
       case 07:
-        // This is an example of sending string between characters.
+        // This is an example of sending text between characters.
         sendData([03] + AsciiCodec().encode('test string between Ascii characters') + [04]);
         break;
       default:
@@ -82,7 +82,7 @@ class InitializeTCP {
         // element or character here is a ASCII code character
         display += low.elementAt(element);
       } else {
-        // we decode other characters back to its origional form as it's a printable character. There could be another easier method for this function.
+        // we decode other characters element back to origional form as it's a printable character. There could be another easier method for this whole function.
         display += AsciiCodec().decode([element]);
       }
     });
