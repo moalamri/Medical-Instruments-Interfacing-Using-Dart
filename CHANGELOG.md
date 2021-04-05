@@ -1,3 +1,3 @@
 ## 1.0.0
 
-- Initial version, created by MoDev32
+- Initial version, created by Mohammed Alamri
